@@ -1,0 +1,112 @@
+header {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    box-shadow: 0 3px 3px gainsboro;
+    padding: 15px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+footer {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+main {
+    padding: 2% 8%;
+}
+
+.main-wrapper {
+    background-color:azure;
+}
+
+section .feature-img img {
+    width: 100%;
+}
+
+section .wrapper-desc h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+section .wrapper-desc > p {
+    font-size: 24px;
+    line-height: 1.3em;
+    font-weight: 400;
+    padding: 16px;
+    text-align: left;
+}
+
+section {
+    
+    width: 70%;
+    margin-right: 24px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 3px 5px #aaa;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+aside {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 3px 5px #aaa;
+    padding: 16px;
+    box-sizing: border-box;
+
+}
+
+.place-wrapper {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 15px;
+}
+
+.place-wrapper  p { 
+    font-size: 18px;
+}
+
+.place-wrapper:last-of-type {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.place-wrapper img {
+    width: 100%;
+}
+
+@media screen and (max-width:768px){
+
+    main {
+        padding: 2%;
+    }
+    section {
+        display: block;
+        width: 100%;
+    }
+
+    aside {
+        display: block;
+        width: 100%;
+    }
+
+    section .wrapper-desc h1 {
+        font-size: 24px;
+    }
+
+    section .wrapper-desc > p{
+        font-size: 18px;
+    }
+    
+}
