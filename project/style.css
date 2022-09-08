@@ -1,0 +1,605 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+input, textarea {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+header .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #fff;
+}
+
+.header-logo img {
+    width: 40px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    background-position: left;
+    background-size: cover;
+}
+
+/*navigation menu area*/
+
+.menu-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-area > ul {
+    display: flex;
+}
+
+.menu-area > ul > li {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 28px;
+}
+
+.menu-area a {
+    display: block;
+    position: relative;
+    color:#111;
+    transition: 0.3s;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+   
+}
+
+.menu-area a:hover, .menu-area .active > a, .menu-area li:hover > a {
+    color: #1bbd36;
+}
+
+.menu-area .drop-down ul {
+    display: block;
+    position: absolute;
+}
+
+.menu-area .drop-down ul {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: calc(100% + 30px);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+    transition: 0.3s;
+    border-top: 2px solid #1bbd36;
+}
+
+.menu-area .drop-down:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+.menu-area .drop-down li {
+    min-width: 180px;
+    position: relative;
+}
+
+.menu-area .drop-down li a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    color: #111;
+}
+
+.menu-area .drop-down ul a:hover, 
+.menu-area .drop-down ul .active > a, 
+.menu-area .drop-down ul li:hover > a {
+    color: #1bbd36;
+}
+
+@media (max-width: 1366px) {
+    .menu-area .drop-down .drop-down:hover > ul {
+        left: -100%;
+    }
+}
+
+a.menu-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 17px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.landing-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-text-wrapper {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-text-wrapper h1 {
+    width: 100%;
+    max-width: 1100px;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: 8.8px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.main-text-wrapper p {
+    max-width: 1100px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.steps-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+#first-step {
+    background-color: #5acda6;
+}
+
+#second-step {
+    background-color: #91ac41;
+}
+
+#third-step {
+    background-color: #e4b476;
+}
+
+#fourth-step {
+    background-color: #f69dad;
+}
+
+.step-item {
+    width: 25%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#fff;
+    text-align: center;
+}
+
+.step-item i {
+    font-size: 96px;
+    transition: all 0.3s;
+}
+
+.step-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.step-item p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8em;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.store-section {
+    background: #f7eee2;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    width: 100%;
+    text-align: center;
+}
+
+p#fresh-food-heading {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.store-section .sec-title h3 {
+    font-size: 44px;
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.store-section .sec-title p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+}
+
+.store-items-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.store-item {
+    width: 25%;
+    text-align: center;
+    padding: 24px;
+}
+
+.icon-wrapper {
+    background-color: #e3b375;
+    display: inline-block;
+    padding: 40px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.icon-wrapper i {
+    font-size: 60px;
+}
+
+.store-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.store-item p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+}
+
+.testimonials-section {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+#testimonials-heading {
+    font-size: 24px;
+    color: #91ac41;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.testimonials-section .sec-title h3 {
+    font-size: 44px;
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+p#testimonials-desc {
+    max-width: 700px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 auto;
+    color: #8b8b99;
+    margin-bottom: 55px;
+    letter-spacing: 0.5px;
+}
+
+.testimonial-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.author-thumb img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.testimonial-item {
+    background: #f5f6fb;
+    width: 25%;
+    padding: 40px 30px;
+    margin: 16px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: box-shadow 0.3s;
+}
+
+.testimonial-desc {
+    font-size: 14px;
+    line-height: 1.8em;
+    color: #8b8b99;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.testimonial-item h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.testimonial-item p {
+    color: #8b8b99;
+    font-size: 12px;
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+.testimonial-item:hover {
+    box-shadow: 0 12px 16px 0 rgb(39 39 47 / 6%);
+}
+
+.left-secti {
+    width: 67%;
+    display: inline-block;
+    margin: 0;
+}
+
+.left-secti img {
+    width: 100%;
+}
+
+.right-section {
+    width: 33.33%;
+    margin: 0;
+    display: inline-block;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-wrapper {
+    padding: 30px;
+}
+
+.follow-section {
+    display: flex;
+    justify-content: stretch;
+}
+
+.text-wrapper h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.text-wrapper p {
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    margin: 0;
+}
+
+input.subscribe-email {
+    width: 80%;
+    display: inline-block;
+    padding: 11px;
+    border: 1px solid rgb(170, 210, 54);
+    
+    box-sizing: border-box;
+    background: #fff;
+    color: #8b8b99;
+    font-size: 16px;
+}
+
+.subscribe-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+#subscribe-btn:hover {
+    color: #fff;
+    border: 1px solid rgb(170, 210, 54);
+    background-color: rgb(170, 210, 54);
+}
+
+#subscribe-btn {
+    background-color: rgb(170, 210, 54);
+    padding: 14px 42px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.stats-section {
+    width: 100%;
+    background-color: #f6fcfa;
+    
+}
+
+.stats-section .stats-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    text-align: center;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    margin: 0 auto;
+}
+
+.stats-section .stats-wrapper .state-item {
+    width: 25%;
+    padding: 0 64px;
+}
+
+.state-item h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.state-item p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color: #57e3b5;
+}
+
+footer {
+    background-color: #111;
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.video-section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.video-section .sec-title h3 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #8b8b99;
+    margin-bottom: 0;
+}
+
+#line-separator {
+    width: 96px;
+    background: #e4b476;
+    height: 1px;
+    display: inline-block;
+    margin-bottom: 36px;
+    margin-top: 20px;
+}
+
+.video-iframe iframe {
+    width: 100%;
+    height: 430px;
+}
+
+.address-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.address-wrapper .contact-address {
+    width: 50%;
+}
+.address-wrapper .contact-form {
+    width: 40%;
+}
+
+.contact-address .green-heading,.green-heading {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.section-heading {
+    font-size: 600;
+    font-size: 44px;
+    margin: 0;
+}
+
+.address-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 32px;
+}
+
+
+.address-lines {
+    font-size: 16px;
+    color: #8b8b99;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.contact-address .section-description,.contact-form .section-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+.input-box {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    padding: 12px;
+    border: 1px solid #e5e6ec;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input#btn-submit {
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+    
